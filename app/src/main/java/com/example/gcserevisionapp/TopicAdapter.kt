@@ -1,4 +1,4 @@
-package com.example.gcserevisionapp.ui.english
+package com.example.gcserevisionapp
 
 import com.example.gcserevisionapp.R
 import android.content.Context
@@ -14,20 +14,15 @@ import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gcserevisionapp.SubtopicsAdapter
+import com.example.gcserevisionapp.ui.english.EnglishAdapter
 
-/**
- * Adapter for the [RecyclerView] in [EnglishFragment].
- */
-private val TAG = "EnglishAdapter"
+private val TAG = "TopicAdapter"
 
-class EnglishAdapter : RecyclerView.Adapter<EnglishAdapter.TopicViewHolder>() {
-    private val list = listOf(
-        "Analysis of Acts",
-        "Characters",
-        "Context and Themes",
-        "Shakespeare's Techniques",
-        "Exam Practice"
-    )
+class TopicAdapter(
+    private val map: Map<String, Map<String, Int>>,
+    context: Context
+) : RecyclerView.Adapter<TopicAdapter.TopicViewHolder>() {
+    private val list = map.keys.toList()
 
     class TopicViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val button: Button = view.findViewById(R.id.button_item)
@@ -50,8 +45,8 @@ class EnglishAdapter : RecyclerView.Adapter<EnglishAdapter.TopicViewHolder>() {
         holder.button.text = item
 
         holder.button.setOnClickListener {
-            val letter = holder.button.text
-            Log.d(TAG, "Clicked $letter")
+            val key = holder.button.text
+            PrefConfig().writeMapInPref(holder.button.context, map[key]!!)
 
             holder.view.findNavController().navigate(R.id.nav_subtopics)
         }

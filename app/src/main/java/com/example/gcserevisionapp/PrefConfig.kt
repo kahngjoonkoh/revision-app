@@ -10,7 +10,8 @@ import java.util.ArrayList
 
 open class PrefConfig {
 
-    private val LIST_KEY: String = "list_key"
+    private val LIST_KEY: String = "list_save"
+    private val MAP_KEY: String = "map_save"
 
     open fun writeListInPref(context: Context, list: List<String>){
         val gson: Gson = Gson()
@@ -32,5 +33,26 @@ open class PrefConfig {
             type
         )
         return list
+    }
+    open fun writeMapInPref(context: Context, map: Map<String, Int>){
+        val gson: Gson = Gson()
+        val jsonString = gson.toJson(map)
+
+        val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+        val editor: SharedPreferences.Editor = pref.edit()
+        editor.putString(MAP_KEY, jsonString)
+        editor.apply()
+    }
+
+    open fun readMapFromPref(context: Context): Map<String, Int> {
+        val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+        val jsonString: String? = pref.getString(MAP_KEY, "")
+        val gson: Gson = Gson()
+        val type = object: TypeToken<Map<String, Int>>(){}.type
+        val map: Map<String, Int> = gson.fromJson(
+            jsonString,
+            type
+        )
+        return map
     }
 }

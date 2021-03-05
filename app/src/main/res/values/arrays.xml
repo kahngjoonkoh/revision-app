@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="english">
-        <item>Analysis of Acts</item>
-        <item>Characters</item>
-        <item>Context and Themes</item>
-        <item>Shakespeare's Techniques</item>
-        <item>Exam Practice</item>
+    <string-array name="english_characters">
+        <item>Romeo</item>
+        <item>Juliet</item>
+        <item>Mercutio</item>
+        <item>Tybalt &amp; Benvolio</item>
+        <item>The Montagues</item>
+        <item>The Capulets</item>
+        <item>Nurse</item>
+        <item>Friar Lawrence</item>
+        <item>Paris, Prince &amp; Others</item>
     </string-array>
 </resources>

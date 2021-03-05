@@ -14,5 +14,31 @@
         android:id="@+id/nav_english"
         android:name="com.example.gcserevisionapp.ui.english.EnglishFragment"
         android:label="@string/menu_english"
-        tools:layout="@layout/fragment_english" />
+        tools:layout="@layout/fragment_english" >
+        <action
+            android:id="@+id/action_nav_english_to_nav_subtopics"
+            app:destination="@id/nav_subtopics" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_subtopics"
+        android:name="com.example.gcserevisionapp.SubtopicsFragment"
+        android:label="@string/menu_english"
+        tools:layout="@layout/fragment_subtopics" >
+        <action
+            android:id="@+id/action_nav_subtopics_to_nav_english_characters_romeo"
+            app:destination="@id/nav_english_characters_romeo" />
+        <action
+            android:id="@+id/action_nav_subtopics_to_nav_english_characters_juliet"
+            app:destination="@id/nav_english_characters_juliet" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_english_characters_romeo"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishCharactersRomeoFragment"
+        android:label="@string/menu_english"
+        tools:layout="@layout/fragment_english_characters_romeo" />
+    <fragment
+        android:id="@+id/nav_english_characters_juliet"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishFragment"
+        android:label="@string/menu_english"
+        tools:layout="@layout/fragment_english_characters_juliet" />
 </navigation>
