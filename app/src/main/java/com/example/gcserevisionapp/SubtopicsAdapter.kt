@@ -76,7 +76,7 @@ class SubtopicsAdapter(context: Context) :
 
         // Assigns a [OnClickListener] to the button contained in the [ViewHolder]
         holder.button.setOnClickListener {
-            Log.d(TAG, item)
+            PrefConfig.Writer.writeInt(context, map[item]!!)
             holder.view.findNavController().navigate(map[item]!!)
         }
     }

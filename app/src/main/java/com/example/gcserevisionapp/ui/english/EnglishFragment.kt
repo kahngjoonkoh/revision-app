@@ -21,8 +21,8 @@ class EnglishFragment : Fragment() {
         "Romeo and Juliet" to mapOf(
             "Analysis of Acts" to mapOf(),
             "Characters" to mapOf(
-                "Romeo" to R.id.action_nav_subtopics_to_nav_english_characters_romeo,
-                "Juliet" to R.id.action_nav_subtopics_to_nav_english_characters_juliet
+                "Romeo" to R.id.nav_english_characters_romeo,
+                "Juliet" to R.id.nav_english_characters_juliet
             ),
             "Context and Themes" to mapOf(),
             "Shakespeare's Techniques" to mapOf(),
