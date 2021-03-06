@@ -41,6 +41,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
     }
 
+    //TODO: use PrefConfig instead of local use sharedPref.
     private fun pickDate(subject1: Button, subject2: TextView, c: Calendar) {
         val date = DatePickerDialog.OnDateSetListener { _, y, m, dayOfMonth ->
             saveDate(y, m, dayOfMonth)

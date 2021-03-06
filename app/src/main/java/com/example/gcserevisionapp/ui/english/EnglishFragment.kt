@@ -17,6 +17,9 @@ class EnglishFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private val binding get() = _binding!!
 
+    /* Since data structure is Map<String, Map<String, Map<String, Int>>>
+     * It should use the UnitAdapter2
+     */
     private val data: Map<String, Map<String, Map<String, Int>>> = mapOf(
         "Romeo and Juliet" to mapOf(
             "Analysis of Acts" to mapOf(),

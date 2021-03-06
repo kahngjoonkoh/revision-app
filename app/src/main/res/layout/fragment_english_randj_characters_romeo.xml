@@ -15,27 +15,64 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tv_english_randj_characters_romeo_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Romeo"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.043"
+                android:paddingStart="@dimen/general_horizontal_padding"
+                android:paddingTop="@dimen/heading_padding_vertical"
+                android:paddingEnd="@dimen/general_horizontal_padding"
+                android:text="Romeo as a Tragic Hero"
+                android:textSize="@dimen/heading4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.022" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/tv_english_randj_characters_romeo_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Juliet"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.607"
+                android:paddingStart="@dimen/general_horizontal_padding"
+                android:paddingTop="@dimen/paragraph_padding_vertical"
+                android:paddingEnd="@dimen/general_horizontal_padding"
+                android:paddingBottom="@dimen/paragraph_padding_vertical"
+                android:text="&#8226; Is a respected character at the start of the play\n
+    - characters openly talk about him being respected\n
+    - from a rich family\n
+    - characters such as Benvolio care for him deeply and respect him as a friend"
+                android:textSize="@dimen/paragraph1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.632" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_1" />
+
+            <TextView
+                android:id="@+id/tv_english_randj_characters_romeo_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_horizontal_padding"
+                android:paddingTop="@dimen/paragraph_padding_vertical"
+                android:paddingEnd="@dimen/general_horizontal_padding"
+                android:paddingBottom="@dimen/paragraph_padding_vertical"
+                android:text="&#8226; Has a fatal flaw\n
+    - is ruled by emotion\n
+    - falls in love too easily\n
+    - acts before thinking\n
+    - is foolish enough to believe that he can change fate"
+                android:textSize="@dimen/paragraph1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_2" />
+
+            <TextView
+                android:id="@+id/tv_english_randj_characters_romeo_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_horizontal_padding"
+                android:paddingTop="@dimen/paragraph_padding_vertical"
+                android:paddingEnd="@dimen/general_horizontal_padding"
+                android:paddingBottom="@dimen/paragraph_padding_vertical"
+                android:text="&#8226; Face death at the end beacuse of their fatal flaw\n
+    - he ends his life because of his love for Juliet\n
+    - and because he is too impulsive"
+                android:textSize="@dimen/paragraph1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_3" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

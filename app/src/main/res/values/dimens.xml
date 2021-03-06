@@ -7,11 +7,19 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
     <dimen name="heading1">50sp</dimen>
     <dimen name="heading2">35sp</dimen>
+    <dimen name="heading3">28dp</dimen>
+    <dimen name="heading4">20dp</dimen>
 
     <dimen name="paragraph1">15sp</dimen>
     <dimen name="paragraph2">10sp</dimen>
 
     <dimen name="text_view_outline_padding">3dp</dimen>
+
+    <dimen name="general_horizontal_padding">16dp</dimen>
+
+    <dimen name="heading_padding_vertical">8dp</dimen>
+    <dimen name="paragraph_padding_vertical">4dp</dimen>
 </resources>
