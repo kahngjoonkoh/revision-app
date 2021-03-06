@@ -3,11 +3,11 @@ package com.example.gcserevisionapp.ui.english
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import com.example.gcserevisionapp.databinding.FragmentEnglishCharactersJulietBinding
+import com.example.gcserevisionapp.databinding.FragmentEnglishRandjCharactersRomeoBinding
 
 
-class EnglishCharactersJulietFragment : Fragment() {
-    private var _binding: FragmentEnglishCharactersJulietBinding? = null
+class EnglishRandjCharactersRomeoFragment : Fragment() {
+    private var _binding: FragmentEnglishRandjCharactersRomeoBinding? = null
 
     private val binding get() = _binding!!
 
@@ -17,7 +17,7 @@ class EnglishCharactersJulietFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentEnglishCharactersJulietBinding.inflate(inflater, container, false)
+        _binding = FragmentEnglishRandjCharactersRomeoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
