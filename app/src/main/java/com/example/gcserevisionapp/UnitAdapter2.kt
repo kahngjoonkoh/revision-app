@@ -1,10 +1,7 @@
 package com.example.gcserevisionapp
 
-import com.example.gcserevisionapp.R
 import android.content.Context
 import android.os.Build
-import android.text.Layout
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,18 +10,17 @@ import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gcserevisionapp.SubtopicsAdapter
-import com.example.gcserevisionapp.ui.english.EnglishAdapter
+import com.google.gson.reflect.TypeToken
 
 private val TAG = "TopicAdapter"
 
-class TopicAdapter(
-    private val map: Map<String, Map<String, Int>>,
+class UnitAdapter2(
+    private val map: Map<String, Map<String, Map<String, Int>>>,
     context: Context
-) : RecyclerView.Adapter<TopicAdapter.TopicViewHolder>() {
+) : RecyclerView.Adapter<UnitAdapter2.UnitViewHolder>() {
     private val list = map.keys.toList()
 
-    class TopicViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    class UnitViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val button: Button = view.findViewById(R.id.button_item)
     }
 
@@ -32,23 +28,23 @@ class TopicAdapter(
         return list.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UnitViewHolder {
         val layout =
             LayoutInflater.from(parent.context).inflate(R.layout.list_item_view, parent, false)
         layout.accessibilityDelegate = Accessibility
-        return TopicViewHolder(layout)
+        return UnitViewHolder(layout)
     }
 
-    override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: UnitViewHolder, position: Int) {
         val item = list[position]
 
         holder.button.text = item
 
         holder.button.setOnClickListener {
             val key = holder.button.text
-            PrefConfig().writeMapInPref(holder.button.context, map[key]!!)
+            PrefConfig.Writer.writeMapInPref(holder.button.context, map[key]!!)
+            holder.view.findNavController().navigate(R.id.nav_topics)
 
-            holder.view.findNavController().navigate(R.id.nav_subtopics)
         }
     }
 

@@ -29,20 +29,21 @@ import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gcserevisionapp.R
+import com.google.gson.reflect.TypeToken
 
 /**
  * Adapter for the [RecyclerView] in [DetailActivity].
  */
-class SubtopicsAdapter(context: Context) :
-    RecyclerView.Adapter<SubtopicsAdapter.SubtopicViewHolder>() {
+class TopicsAdapter(context: Context) :
+    RecyclerView.Adapter<TopicsAdapter.TopicViewHolder>() {
 
-    private val map: Map<String, Int> = PrefConfig.Reader.readMapFromPref(context)
+    private val map: Map<String, Map<String, Int>> = PrefConfig.Reader.readMap2FromPref(context)
     private val mapKeys: List<String> = map.keys.toList()
 
-    private val TAG = "SubtopicsAdapter"
+    private val TAG = "TopicsAdapter"
 
 
-    class SubtopicViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    class TopicViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val button = view.findViewById<Button>(R.id.button_item)
     }
 
@@ -51,7 +52,7 @@ class SubtopicsAdapter(context: Context) :
     /**
      * Creates new views with R.layout.item_view as its template
      */
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubtopicViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
         val layout = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.list_item_view, parent, false)
@@ -59,13 +60,13 @@ class SubtopicsAdapter(context: Context) :
         // Setup custom accessibility delegate to set the text read
         layout.accessibilityDelegate = Accessibility
 
-        return SubtopicViewHolder(layout)
+        return TopicsAdapter.TopicViewHolder(layout)
     }
 
     /**
      * Replaces the content of an existing view with new data
      */
-    override fun onBindViewHolder(holder: SubtopicViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TopicsAdapter.TopicViewHolder, position: Int) {
 
         val item = mapKeys[position]
         // Needed to call startActivity
@@ -77,7 +78,8 @@ class SubtopicsAdapter(context: Context) :
         // Assigns a [OnClickListener] to the button contained in the [ViewHolder]
         holder.button.setOnClickListener {
             Log.d(TAG, item)
-            holder.view.findNavController().navigate(map[item]!!)
+            PrefConfig.Writer.writeMapInPref(holder.button.context, map[item]!!)
+            holder.view.findNavController().navigate(R.id.nav_subtopics)
         }
     }
 

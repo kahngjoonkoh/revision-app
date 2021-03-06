@@ -1,10 +1,7 @@
-package com.example.gcserevisionapp.ui.english
+package com.example.gcserevisionapp
 
-import com.example.gcserevisionapp.R
 import android.content.Context
 import android.os.Build
-import android.text.Layout
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,23 +10,18 @@ import android.widget.Button
 import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gcserevisionapp.SubtopicsAdapter
+import com.google.gson.reflect.TypeToken
 
-/**
- * Adapter for the [RecyclerView] in [EnglishFragment].
- */
-private val TAG = "EnglishAdapter"
+private val TAG = "TopicAdapter"
 
-class EnglishAdapter : RecyclerView.Adapter<EnglishAdapter.TopicViewHolder>() {
-    private val list = listOf(
-        "Analysis of Acts",
-        "Characters",
-        "Context and Themes",
-        "Shakespeare's Techniques",
-        "Exam Practice"
-    )
+class UnitAdapter(
+    private val map: Map<String, Map<String, Int>>,
+    context: Context
+) : RecyclerView.Adapter<UnitAdapter.UnitViewHolder>() {
+    val type = map.javaClass
+    private val list = map.keys.toList()
 
-    class TopicViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    class UnitViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val button: Button = view.findViewById(R.id.button_item)
     }
 
@@ -37,23 +29,22 @@ class EnglishAdapter : RecyclerView.Adapter<EnglishAdapter.TopicViewHolder>() {
         return list.size
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UnitViewHolder {
         val layout =
             LayoutInflater.from(parent.context).inflate(R.layout.list_item_view, parent, false)
         layout.accessibilityDelegate = Accessibility
-        return TopicViewHolder(layout)
+        return UnitViewHolder(layout)
     }
 
-    override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: UnitViewHolder, position: Int) {
         val item = list[position]
 
         holder.button.text = item
 
         holder.button.setOnClickListener {
-            val letter = holder.button.text
-            Log.d(TAG, "Clicked $letter")
-
-            holder.view.findNavController().navigate(R.id.nav_subtopics)
+            val key = holder.button.text
+                PrefConfig.Writer.writeMapInPref(holder.button.context, map[key]!!)
+                holder.view.findNavController().navigate(R.id.nav_subtopics)
         }
     }
 

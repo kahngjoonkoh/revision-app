@@ -16,7 +16,16 @@
         android:label="@string/menu_english"
         tools:layout="@layout/fragment_english" >
         <action
-            android:id="@+id/action_nav_english_to_nav_subtopics"
+            android:id="@+id/action_nav_english_to_nav_topics"
+            app:destination="@id/nav_topics" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_topics"
+        android:name="com.example.gcserevisionapp.TopicsFragment"
+        android:label="@string/menu_english"
+        tools:layout="@layout/fragment_topics" >
+        <action
+            android:id="@+id/action_nav_topics_to_nav_subtopics"
             app:destination="@id/nav_subtopics" />
     </fragment>
     <fragment
@@ -38,7 +47,7 @@
         tools:layout="@layout/fragment_english_characters_romeo" />
     <fragment
         android:id="@+id/nav_english_characters_juliet"
-        android:name="com.example.gcserevisionapp.ui.english.EnglishFragment"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishCharactersJulietFragment"
         android:label="@string/menu_english"
         tools:layout="@layout/fragment_english_characters_juliet" />
 </navigation>

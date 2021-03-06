@@ -1,17 +1,13 @@
 package com.example.gcserevisionapp.ui.english
 
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.*
-import android.view.accessibility.AccessibilityNodeInfo
-import android.widget.Button
-import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gcserevisionapp.R
-import com.example.gcserevisionapp.TopicAdapter
+import com.example.gcserevisionapp.UnitAdapter
+import com.example.gcserevisionapp.UnitAdapter2
 import com.example.gcserevisionapp.databinding.FragmentEnglishBinding
 
 
@@ -21,15 +17,17 @@ class EnglishFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private val binding get() = _binding!!
 
-    private val data: Map<String, Map<String, Int>> = mapOf(
-        "Analysis of Acts" to mapOf(),
-        "Characters" to mapOf(
-            "Romeo" to R.id.action_nav_subtopics_to_nav_english_characters_romeo,
-            "Juliet" to R.id.nav_english_characters_juliet
-        ),
-        "Context and Themes" to mapOf(),
-        "Shakespeare's Techniques" to mapOf(),
-        "Exam Practice" to mapOf()
+    private val data: Map<String, Map<String, Map<String, Int>>> = mapOf(
+        "Romeo and Juliet" to mapOf(
+            "Analysis of Acts" to mapOf(),
+            "Characters" to mapOf(
+                "Romeo" to R.id.action_nav_subtopics_to_nav_english_characters_romeo,
+                "Juliet" to R.id.action_nav_subtopics_to_nav_english_characters_juliet
+            ),
+            "Context and Themes" to mapOf(),
+            "Shakespeare's Techniques" to mapOf(),
+            "Exam Practice" to mapOf()
+        )
     )
 
     override fun onCreateView(
@@ -45,7 +43,7 @@ class EnglishFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding.recyclerViewEnglish
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = TopicAdapter(data, requireContext())
+        recyclerView.adapter = UnitAdapter2(data, requireContext())
     }
 
     override fun onDestroyView() {

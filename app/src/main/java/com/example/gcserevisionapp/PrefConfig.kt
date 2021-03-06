@@ -5,15 +5,12 @@ import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import java.lang.reflect.Type
-import java.util.ArrayList
 
 open class PrefConfig {
 
     private val LIST_KEY: String = "list_save"
-    private val MAP_KEY: String = "map_save"
 
-    open fun writeListInPref(context: Context, list: List<String>){
+    open fun writeListInPref(context: Context, list: List<String>) {
         val gson: Gson = Gson()
         val jsonString = gson.toJson(list)
 
@@ -27,32 +24,63 @@ open class PrefConfig {
         val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
         val jsonString: String? = pref.getString(LIST_KEY, "")
         val gson: Gson = Gson()
-        val type = object: TypeToken<List<String>>(){}.type
+        val type = object : TypeToken<List<String>>() {}.type
         val list: List<String> = gson.fromJson(
             jsonString,
             type
         )
         return list
     }
-    open fun writeMapInPref(context: Context, map: Map<String, Int>){
-        val gson: Gson = Gson()
-        val jsonString = gson.toJson(map)
 
-        val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
-        val editor: SharedPreferences.Editor = pref.edit()
-        editor.putString(MAP_KEY, jsonString)
-        editor.apply()
+    object Writer {
+        private const val MAP_KEY = "map_save"
+        private const val MAP2_KEY = "map2_save"
+
+        @JvmName("writeMapInPref1")
+        open fun writeMapInPref(context: Context, map: Map<String, Int>) {
+            val gson: Gson = Gson()
+            val jsonString = gson.toJson(map)
+
+            val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+            val editor: SharedPreferences.Editor = pref.edit()
+            editor.putString(MAP_KEY, jsonString)
+            editor.apply()
+        }
+
+        open fun writeMapInPref(context: Context, map: Map<String, Map<String, Int>>) {
+            val gson: Gson = Gson()
+            val jsonString = gson.toJson(map)
+
+            val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+            val editor: SharedPreferences.Editor = pref.edit()
+            editor.putString(MAP2_KEY, jsonString)
+            editor.apply()
+        }
     }
 
-    open fun readMapFromPref(context: Context): Map<String, Int> {
-        val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
-        val jsonString: String? = pref.getString(MAP_KEY, "")
-        val gson: Gson = Gson()
-        val type = object: TypeToken<Map<String, Int>>(){}.type
-        val map: Map<String, Int> = gson.fromJson(
-            jsonString,
-            type
-        )
-        return map
+    object Reader {
+        private const val MAP_KEY = "map_save"
+        private const val MAP2_KEY = "map2_save"
+        open fun readMapFromPref(context: Context): Map<String, Int> {
+            val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+            val jsonString: String? = pref.getString(MAP_KEY, "")
+            val gson: Gson = Gson()
+            val type = object : TypeToken<Map<String, Int>>() {}.type
+            return gson.fromJson(
+                jsonString,
+                type
+            )
+        }
+
+        open fun readMap2FromPref(context: Context): Map<String, Map<String, Int>> {
+            val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+            val jsonString: String? = pref.getString(MAP2_KEY, "")
+            val gson: Gson = Gson()
+            val type = object : TypeToken<Map<String, Map<String, Int>>>() {}.type
+            return gson.fromJson(
+                jsonString,
+                type
+            )
+        }
     }
 }
