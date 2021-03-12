@@ -40,14 +40,15 @@
             android:id="@+id/action_nav_subtopics_to_nav_english_characters_juliet"
             app:destination="@id/nav_english_characters_juliet" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_english_characters_romeo"
         android:name="com.example.gcserevisionapp.ui.english.EnglishRandjCharactersRomeoFragment"
-        android:label="@string/menu_english"
+        android:label="@string/romeo"
         tools:layout="@layout/fragment_english_randj_characters_romeo" />
     <fragment
         android:id="@+id/nav_english_characters_juliet"
         android:name="com.example.gcserevisionapp.ui.english.EnglishRandjCharactersJulietFragment"
-        android:label="@string/menu_english"
+        android:label="@string/juliet"
         tools:layout="@layout/fragment_english_randj_characters_juliet" />
 </navigation>

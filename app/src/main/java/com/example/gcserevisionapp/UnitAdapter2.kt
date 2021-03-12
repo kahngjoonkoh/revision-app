@@ -42,7 +42,7 @@ class UnitAdapter2(
 
         holder.button.setOnClickListener {
             val key = holder.button.text
-            PrefConfig.Writer.writeMapInPref(holder.button.context, map[key]!!)
+            PrefConfig.Writer.writeMapInPref(holder.view.context, map[key]!!)
             holder.view.findNavController().navigate(R.id.nav_topics)
 
         }

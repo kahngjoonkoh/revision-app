@@ -8,6 +8,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.example.gcserevisionapp.PrefConfig
 import com.example.gcserevisionapp.R
 import com.example.gcserevisionapp.databinding.FragmentHomeBinding
 import com.example.gcserevisionapp.ui.home.HomeViewModel
@@ -31,8 +33,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val dateLeftText = binding!!.remainingDaysView
         dateBtn.setOnClickListener { pickDate(dateBtn, dateLeftText, c) }
         updateTextViews(dateBtn, dateLeftText, c)
+
+        val progressBtn = binding!!.continueRevision
+        progressBtn.setOnClickListener {
+            val fragmentId = PrefConfig.Reader.readInt(view.context)
+            view.findNavController().navigate(fragmentId)
+        }
     }
 
+    //TODO: use PrefConfig instead of local use sharedPref.
     private fun pickDate(subject1: Button, subject2: TextView, c: Calendar) {
         val date = DatePickerDialog.OnDateSetListener { _, y, m, dayOfMonth ->
             saveDate(y, m, dayOfMonth)
