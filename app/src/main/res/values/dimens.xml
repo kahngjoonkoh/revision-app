@@ -18,8 +18,11 @@
 
     <dimen name="text_view_outline_padding">3dp</dimen>
 
-    <dimen name="general_horizontal_padding">16dp</dimen>
+    <dimen name="heading_padding_sides">16dp</dimen>
+    <dimen name="heading_padding_top">16dp</dimen>
+    <dimen name="heading_padding_bottom">0dp</dimen>
 
-    <dimen name="heading_padding_vertical">8dp</dimen>
-    <dimen name="paragraph_padding_vertical">4dp</dimen>
+    <dimen name="paragraph_padding_sides">16dp</dimen>
+    <dimen name="paragraph_padding_top">4dp</dimen>
+    <dimen name="paragraph_padding_bottom">4dp</dimen>
 </resources>
