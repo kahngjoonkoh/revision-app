@@ -10,8 +10,8 @@
 
     <dimen name="heading1">50sp</dimen>
     <dimen name="heading2">35sp</dimen>
-    <dimen name="heading3">28dp</dimen>
-    <dimen name="heading4">20dp</dimen>
+    <dimen name="heading3">28sp</dimen>
+    <dimen name="heading4">20sp</dimen>
 
     <dimen name="paragraph1">15sp</dimen>
     <dimen name="paragraph2">10sp</dimen>

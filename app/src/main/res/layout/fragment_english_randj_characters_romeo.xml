@@ -24,7 +24,7 @@
                 android:paddingEnd="@dimen/heading_padding_sides"
                 android:paddingBottom="@dimen/heading_padding_bottom"
 
-                android:text="Character Attributes"
+                android:text="@string/character_attributes_romeo_heading"
                 android:textSize="@dimen/heading4"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -40,33 +40,7 @@
                 android:paddingEnd="@dimen/paragraph_padding_sides"
                 android:paddingBottom="@dimen/paragraph_padding_bottom"
 
-                android:text="
-IMPULSIVE\n
-- he falls immediately in love with Juliet and forgets Rosaline\n
-
-\nDEVOTED FRIEND\n
-- when Mercutio is killed by Tybalt, Romeo is so enraged that he kills him too\n
-- He jokes with Mercutio and Benvolio
-
-\nPASSIONATE\n
-- he kills himself in order to be with Juliet\n
-
-\nIDEALISTIC\n
-- 'With love’s light wings did I o’erperch these walls' (Act 2, Scene 2)\n
-
-\nIRRATIONAL\n
-- 'thou sham'st thy shape, thy love, thy wit' (Friar Lawrence, Act 3, Scene 3)\n
-- Romeo does not appreciate what he still has\n
-
-\nPOLITE\n
-- 'Nurse, commend me to thy lady and mistress' (Act 2, Scene 4)\n
-
-\nEMOTIONAL\n
-- 'O brawling love, O loving hate' (Act 1, Scene 1)\n
-- Oxymoron -> How confused\n
-
-\nSTRONG-WILLED\n
-- 'let us hence, I stand on sudden haste' (Act 2, Scene 3)"
+                android:text="@string/character_attributes_romeo_paragraph"
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +56,7 @@ IMPULSIVE\n
                 android:paddingEnd="@dimen/heading_padding_sides"
                 android:paddingBottom="@dimen/heading_padding_bottom"
 
-                android:text="Changes in Character"
+                android:text="@string/changes_in_character_romeo"
                 android:textSize="@dimen/heading4"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -98,14 +72,7 @@ IMPULSIVE\n
                 android:paddingEnd="@dimen/paragraph_padding_sides"
                 android:paddingBottom="@dimen/paragraph_padding_bottom"
 
-                android:text="
-COURAGE\n
-- 'They beauty hath made me effeminate \ And in my temper softened valor's steel!' (Act 3, Scene 1)\n
-
-\nEMOTIONS\n
-- At the start of the play, Romeo associates love with misery.\n
-- When he's in love with Juliet, he associates it with happiness.\n
-- no sorrow can counter the 'exchange of joy' (Act 2, Scene 6)"
+                android:text="@string/change_in_character_romeo_paragraph"
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +87,7 @@ COURAGE\n
                 android:paddingEnd="@dimen/heading_padding_sides"
                 android:paddingBottom="@dimen/heading_padding_bottom"
 
-                android:text="Romeo as a Tragic Hero"
+                android:text="@string/romeo_as_a_tragic_hero"
                 android:textSize="@dimen/heading4"
 
                 app:layout_constraintStart_toStartOf="parent"
@@ -136,22 +103,7 @@ COURAGE\n
                 android:paddingEnd="@dimen/paragraph_padding_sides"
                 android:paddingBottom="@dimen/paragraph_padding_bottom"
 
-                android:text="
-IS A RESPECTED CHARACTER AT THE START OF THE PLAY\n
-- characters openly talk about him being respected\n
-- from a rich family\n
-- characters such as Benvolio care for him deeply and respect him as a friend\n
-
-\nHAS A FATAL FLAW\n
-- is ruled by emotion\n
-- falls in love too easily\n
-- acts before thinking\n
-- is foolish enough to believe that he can change fate\n
-- 'I defy you stars!'\n
-
-\nFACE DEATH AT THE END BECAUSE OF THEIR FATAL FLAW\n
-    - he ends his life because of his love for Juliet\n
-    - and because he is too impulsive"
+                android:text="@string/romeo_as_a_tragic_hero_paragraph"
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"

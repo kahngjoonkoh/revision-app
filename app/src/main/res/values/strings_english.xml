@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Randj Characters Romeo -->
+    <string name="character_attributes_romeo_heading">
+        <b><u>Character Attributes</u></b>
+    </string>
+    <string name="character_attributes_romeo_paragraph">
+        <b><i>Impulsive</i></b> \
+        <li>he falls immediately in love with Juliet and forgets Rosaline</li> \
+        \
+        <b><i>Devoted friend</i></b> \
+        <li>when Mercutio is killed by Tybalt, Romeo is so enraged that he kills him too</li> \
+        <li>He jokes with Mercutio and Benvolio</li> \
+        \
+        <b><i>Passionate</i></b> \
+        <li>he kills himself in order to be with Juliet</li> \
+        \
+        <b><i>Idealistic</i></b> \
+        <li><i>\"With love\'s light wings did I o\'erperch these walls\"</i> (Act 2, Scene 2)</li> \
+        \
+        <b><i>Irrational</i></b> \
+        <li><i>\"thou sham\'st thy shape, thy love, thy wit\"</i> (Friar Lawrence, Act 3, Scene 3)</li> \
+        <li>Romeo does not appreciate what he still has</li> \
+        \
+        <b><i>Polite</i></b> \
+        <li><i>\"Nurse, commend me to thy lady and mistress\"</i> (Act 2, Scene 4)</li> \
+        \
+        <b><i>Emotional</i></b> \
+        <li>\"O brawling love, O loving hate\" (Act 1, Scene 1)</li> \
+        <li>Oxymoron -> How confused</li> \
+        \
+        <b><i>Strong-willed</i></b> \
+        <li><i>\"let us hence, I stand on sudden haste\"</i> (Act 2, Scene 3)</li>
+    </string>
+
+    <string name="changes_in_character_romeo">
+        <b><u>Changes in Character</u></b>
+    </string>
+    <string name="change_in_character_romeo_paragraph">
+        <b><i>Courage</i></b> \
+        <li><i>\"Thy beauty hath made me effeminate / And in my temper softened valor\'s steel!\"</i> (Act 3, Scene 1)</li> \
+        \
+        <b><i>Emotions</i></b> \
+        <li>At the start of the play, Romeo associates love with misery.</li> \
+        <li>When he\'s in love with Juliet, he associates it with happiness.</li> \
+        <li>no sorrow can counter the <i>\"exchange of joy\"</i> (Act 2, Scene 6)</li>
+    </string>
+
+    <string name="romeo_as_a_tragic_hero">
+        <b><u>Romeo as a Tragic Hero</u></b>
+    </string>
+    <string name="romeo_as_a_tragic_hero_paragraph">
+        <b><i>Is a respected character at the start of the play</i></b> \
+        <li>characters openly talk about him being respected</li> \
+        <li>from a rich family</li> \
+        <li>characters such as Benvolio care for him deeply and respect him as a friend</li> \
+        \
+        <b><i>Has a fatal flaw</i></b> \
+        <li>is ruled by emotion</li> \
+        <li>falls in love too easily</li> \
+        <li>acts before thinking</li> \
+        <li>is foolish enough to believe that he can change fate</li> \
+        <li><i>\"I defy you stars!\"</i> (Act 5, Scene 1)</li> \
+        \
+        <b><i>Face death at the end because of his fatal flaw</i></b> \
+        <li>he ends his life because of his love for Juliet</li> \
+        <li>and because he is too impulsive</li>
+    </string>
+    <!-- Randj Characters Juliet -->
+</resources>
