@@ -6,16 +6,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="56dp">
+        android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_1"
+                android:id="@+id/tv_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -31,7 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_2"
+                android:id="@+id/tv_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -44,10 +42,10 @@
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_1" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_1" />
 
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_3"
+                android:id="@+id/tv_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -60,10 +58,10 @@
                 android:textSize="@dimen/heading4"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_2" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_2" />
 
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_4"
+                android:id="@+id/tv_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -76,9 +74,9 @@
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_3" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_3" />
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_5"
+                android:id="@+id/tv_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -91,10 +89,10 @@
                 android:textSize="@dimen/heading4"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_4" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_4" />
 
             <TextView
-                android:id="@+id/tv_english_randj_characters_romeo_6"
+                android:id="@+id/tv_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -107,7 +105,7 @@
                 android:textSize="@dimen/paragraph1"
 
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_english_randj_characters_romeo_5" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_5" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

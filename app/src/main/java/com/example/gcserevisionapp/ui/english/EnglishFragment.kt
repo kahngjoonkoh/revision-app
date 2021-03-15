@@ -30,6 +30,12 @@ class EnglishFragment : Fragment() {
             "Context and Themes" to mapOf(),
             "Shakespeare's Techniques" to mapOf(),
             "Exam Practice" to mapOf()
+        ),
+        "English Language" to mapOf(
+            "Paper 1" to mapOf(
+                "Questions 1a - e" to R.id.nav_english_paper1_1ae
+            ),
+            "Paper 2" to mapOf()
         )
     )
 

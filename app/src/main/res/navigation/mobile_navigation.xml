@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_nav_subtopics_to_nav_english_characters_juliet"
             app:destination="@id/nav_english_characters_juliet" />
+        <action
+            android:id="@+id/action_nav_subtopics_to_englishLangPaper1_1aeFragment"
+            app:destination="@id/nav_english_paper1_1ae" />
     </fragment>
 
     <fragment
@@ -51,4 +54,9 @@
         android:name="com.example.gcserevisionapp.ui.english.EnglishRandjCharactersJulietFragment"
         android:label="@string/juliet"
         tools:layout="@layout/fragment_english_randj_characters_juliet" />
+    <fragment
+        android:id="@+id/nav_english_paper1_1ae"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_1aeFragment"
+        android:label="@string/questions_1ae"
+        tools:layout="@layout/fragment_english_lang_paper1_1ae"/>
 </navigation>

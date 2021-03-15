@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-<!--menu labels-->
+    <!--menu labels-->
     <string name="menu_home">Home</string>
     <string name="menu_english">English</string>
     <string name="menu_maths">Maths</string>
@@ -19,7 +19,7 @@
     <string name="menu_business">Business Studies</string>
     <string name="menu_dt">Design &amp; Technology</string>
 
-<!--fragment titles-->
+    <!--fragment titles-->
     <string name="text_home">Home</string>
     <string name="text_english">English</string>
     <string name="text_maths">Maths</string>
@@ -34,8 +34,9 @@
 
     <string name="romeo">Romeo</string>
     <string name="juliet">Juliet</string>
+    <string name="questions_1ae">Questions 1a - e</string>
 
-<!--home fragment-->
+    <!--home fragment-->
     <string name="exam_date_year">2021</string>
     <string name="exam_date_month">5</string>
     <string name="exam_date_day">15</string>
@@ -45,4 +46,7 @@
     <string name="look_up_subtopics">Show Stored Topics</string>
 
     <string name="click_again_to_exit">Click again to exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
