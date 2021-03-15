@@ -34,7 +34,12 @@
 
     <string name="romeo">Romeo</string>
     <string name="juliet">Juliet</string>
-    <string name="questions_1ae">Questions 1a - e</string>
+
+    <string name="questions_1ae">Questions 1A - E</string>
+    <string name="questions_1f">Question 1F</string>
+    <string name="questions_2ac">Questions 2A - C</string>
+    <string name="questions_2d">Question 2D</string>
+    <string name="question_3">Question 3</string>
 
     <!--home fragment-->
     <string name="exam_date_year">2021</string>
@@ -48,5 +53,6 @@
     <string name="click_again_to_exit">Click again to exit</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

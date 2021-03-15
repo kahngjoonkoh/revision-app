@@ -31,11 +31,23 @@ class EnglishFragment : Fragment() {
             "Shakespeare's Techniques" to mapOf(),
             "Exam Practice" to mapOf()
         ),
+        "An Inspector Calls" to mapOf(
+
+        ),
         "English Language" to mapOf(
             "Paper 1" to mapOf(
-                "Questions 1a - e" to R.id.nav_english_paper1_1ae
+                "Questions 1A - E" to R.id.nav_english_paper1_1ae,
+                "Question 1F" to R.id.nav_english_paper1_1f,
+                "Questions 2A - C" to R.id.nav_english_paper1_2ac,
+                "Question 2D" to R.id.nav_english_paper1_2d,
+                "Question 3" to R.id.nav_english_paper1_3
             ),
-            "Paper 2" to mapOf()
+            "Paper 2" to mapOf(
+            )
+        ),
+        "Poetry" to mapOf(
+            "Love and Relationships" to mapOf(),
+            "Unseen Poetry" to mapOf()
         )
     )
 

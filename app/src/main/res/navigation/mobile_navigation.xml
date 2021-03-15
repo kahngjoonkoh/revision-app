@@ -42,6 +42,15 @@
         <action
             android:id="@+id/action_nav_subtopics_to_englishLangPaper1_1aeFragment"
             app:destination="@id/nav_english_paper1_1ae" />
+        <action
+            android:id="@+id/action_nav_subtopics_to_nav_english_paper1_2ac"
+            app:destination="@id/nav_english_paper1_2ac" />
+        <action
+            android:id="@+id/action_nav_subtopics_to_nav_english_paper1_2d"
+            app:destination="@id/nav_english_paper1_2d" />
+        <action
+            android:id="@+id/action_nav_subtopics_to_nav_english_paper1_3"
+            app:destination="@id/nav_english_paper1_3" />
     </fragment>
 
     <fragment
@@ -59,4 +68,24 @@
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_1aeFragment"
         android:label="@string/questions_1ae"
         tools:layout="@layout/fragment_english_lang_paper1_1ae"/>
+    <fragment
+        android:id="@+id/nav_english_paper1_1f"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_1fFragment"
+        android:label="@string/questions_1f"
+        tools:layout="@layout/fragment_english_lang_paper1_1f"/>
+    <fragment
+        android:id="@+id/nav_english_paper1_2ac"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_2acFragment"
+        android:label="@string/questions_2ac"
+        tools:layout="@layout/fragment_english_lang_paper1_2ac"/>
+    <fragment
+        android:id="@+id/nav_english_paper1_2d"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_2dFragment"
+        android:label="@string/questions_2d"
+        tools:layout="@layout/fragment_english_lang_paper1_2d"/>
+    <fragment
+        android:id="@+id/nav_english_paper1_3"
+        android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_3Fragment"
+        android:label="@string/question_3"
+        tools:layout="@layout/fragment_english_lang_paper1_3"/>
 </navigation>
