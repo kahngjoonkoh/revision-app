@@ -67,4 +67,96 @@
         <li>and because he is too impulsive</li>
     </string>
     <!-- Randj Characters Juliet -->
+    <!-- Paper 1 Questions 1A - E -->
+    <string name="questions1ae_heading">
+        <b><u>Short Answer Comprehension Questions</u></b>
+    </string>
+    <string name="questions1ae_paragraph">
+        <li>15 marks</li> \
+        <li>Text A</li> \
+        <b><i>Advice</i></b> \
+        <li>Read Text A carefully before you answer any of the questions. As you deal with each question, look back at the section of the text is asking about to work out your answer.</li> \
+        <li>Make sure you use your own words where the question tells you to do so.</li> \
+        <li>Pay attention to the specific evidence the question is asking for, e.g. if the question asks for two examples make sure you give two.</li> \
+        <li>Where a question asks you to explain how or why, make sure you explain ideas fully. You can use \'because\', \'as\' and \'since\' to help you do this.</li>
+    </string>
+    <!-- Paper 1 Question 1F -->
+    <string name="questions1f_heading">
+        <b><u>Summary Task</u></b>
+    </string>
+    <string name="questions1f_paragraph">
+        <li>15 marks</li> \
+        <li>Text B</li> \
+        <li>Use your OWN words</li> \
+        <li>No more than 120 words</li> \
+        <b><i>Advice</i></b> \
+        <li>As you read Text b, underline ideas that will help you answer the focus of the summary task.</li> \
+        <li>Use your own words where possible when writing your summary. Do not use quotations or copy phrases or longer sections from Text B</li> \
+        <li>Keep your summary objective (write in third person) - do not include personal experiences, comments or opinions.</li> \
+        <li>Only include ideas that directly answer the question, any redundant material or extra information from the text should not be included.</li> \
+        <li>Organise relevant ideas from the text into a logical order. Use the two ideas given in the question to help you write in two paragraphs.</li> \
+        <li>Use connecting words/phrases to link or contrast ideas within and between sentences. Do not write in note from or list ideas.</li> \
+        <li>Ensure your summary is within the word limit. If it is too long, then it is not an effective summary.</li>
+    </string>
+    <!-- Paper 1 Questions 2A - C -->
+    <string name="questions2ac_heading">
+        <b><u>Short Answer Comprehension and Language Questions</u></b>
+    </string>
+    <string name="questions2ac_paragraph">
+        <li>10 marks</li> \
+        <li>Text C</li> \
+        <b><i>Advice</i></b> \
+        <li>Read the whole of Text C at least once before you start your answers to Question 2. You will need to show that you understand the meaning of words and phrases as they are used in this context not just the general meaning of them.</li> \
+        <li>Read each question carefully and pay attention to what you are being asked to do to show your understanding, e.g. if the question asks you to give one word or phrase do not five a whole sentence.</li> \
+        <li>Make sure you use your own words where the question tells you to do so.</li> \
+        <li>As you answer each question, look back at the section of Text C it is asking about in order to work out your answer.</li> \
+        <li>Where a question asks you to explain how or why, make sure you explain your ideas fully. You can use \'because\', \'as\' and \'since\' to help you to do this.</li> \
+        <li>Remember when you are asked to use an example to explain, you will need to identify your example clearly, e.g. put quotation marks around any words taken from the text. Use your own words in the explanation of how the example chosen is working to suggest something particular to the reader.</li>
+    </string>
+    <!-- Paper 1 Question 2D -->
+    <string name="questions2d_heading">
+        <b><u>Language/analysis Task</u></b>
+    </string>
+    <string name="questions2d_paragraph">
+        <li>15 marks</li> \
+        <li>Text C</li> \
+        <li>200-300 words</li> \
+        <b><i>Advice</i></b> \
+        <li>Re-read both of the paragraphs identified in the question, underlining examples of words or phrases you might choose to explain in your answer.</li> \
+        <li>Select the strongest three examples from each paragraph - that is six in total. Try to include imagery and to choose examples you can best explain in detail.</li> \
+        <li>For each example you use, make sure that you explain the precise meaning in context and suggest exactly how the words/phrases are meant to make the reader feel in relation to the focus of the question (the \'effect\' the writer wanted to create).</li> \
+        <li>To help you analyse and explain the effect of your examples, think of the associations of each of the words and phrases the writer has used, e.g. consider where else you might expect to hear this words used, what picture(s) it creates, what sensation(s) it suggests.</li> \
+        <li>Use \'because\', \'as\' and \'since\' to help you extend your explanations.</li> \
+        <li>Where you recognise connections or contrasts in how the writer has used language, explain them in a concluding general comment or overview.</li> \
+        <li>Make sure that your explanations are precise and specific - avoid empty general comments such as \'the writer sues a log of description\' and do not use the same explanation for more than one example.</li> \
+        <li>Remember questions is not assessed for writing - this means it is better to try to find the right word to explain a meaning effect more precisely and show your understanding more fully, even if you are not quite sure of the spelling.</li>
+    </string>
+    <!-- Paper 1 Question 3 -->
+    <string name="questions3_heading">
+        <b><u>Extended Response to Reading</u></b>
+    </string>
+    <string name="questions3_paragraph">
+        <li>25 marks</li> \
+        <li>Text C</li> \
+        <b><i>Has to be converted to one of the following:</i></b> \
+        <li>Letter</li> \
+        <li>Journal</li> \
+        <li>Report</li> \
+        <li>Speech</li> \
+        <li>Interview</li> \
+        <li>Article</li> \
+        <b><i>Reading Advice</i></b> \
+        <li>Pay attention to the perspective, audience, purpose and form required by the question</li> \
+        <li>Use the bullet points to help plan the content for your answer.</li> \
+        <li>It is important to demonstrate your ability to interpret and use a good range of relevant ideas and details from the text.</li> \
+        <li>Make sure you cover all aspects of all three bullet points - this will help you to include evidence that you have understood implicit ideas and attitudes, as well as explicit, more obvious meanings.</li> \
+        <li>Use your own words where you can - do not just copy expressions from the text</li> \
+        <li>Try to develop ideas - watch out for hints and suggestions in the text such as how characters might feel, or their reasons for behaving as they did.</li> \
+        <li>Extend explanations and ideas using the evidence you have found by reading Text C - do not invent completely new ideas or information that could not be backed up with details or clues from the text.</li> \
+        <b><i>Writing Advice</i></b> \
+        <li>Ensure the voice, style and register you use fits the persona/role, audience and purpose for the task</li> \
+        <li>Plan the route through your answer before you start writing to make sure your ideas are ordered logically and linked helpfully for your reader.</li> \
+        <li>Keep in mind the text type that you are meant to be writing for the whole answer</li> \
+        <li>Take time to read back and correct your answer to avoid errors which affect meaning.</li>
+    </string>
 </resources>

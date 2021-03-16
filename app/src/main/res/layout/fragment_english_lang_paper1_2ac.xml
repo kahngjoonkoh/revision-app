@@ -16,11 +16,33 @@
                 android:id="@+id/tv_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Paper 1 Questions 2a - c"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+
+                android:paddingStart="@dimen/heading_padding_sides"
+                android:paddingTop="@dimen/heading_padding_top"
+                android:paddingEnd="@dimen/heading_padding_sides"
+                android:paddingBottom="@dimen/heading_padding_bottom"
+
+                android:text="@string/questions2ac_heading"
+                android:textSize="@dimen/heading4"
+
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="@dimen/paragraph_padding_sides"
+                android:paddingTop="@dimen/paragraph_padding_top"
+                android:paddingEnd="@dimen/paragraph_padding_sides"
+                android:paddingBottom="@dimen/paragraph_padding_bottom"
+
+                android:text="@string/questions2ac_paragraph"
+                android:textSize="@dimen/paragraph1"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

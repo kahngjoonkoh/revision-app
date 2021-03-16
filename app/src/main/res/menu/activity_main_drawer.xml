@@ -13,5 +13,10 @@
             android:id="@+id/nav_english"
             android:icon="@drawable/ic_menu_english"
             android:title="@string/menu_english" />
+
+        <item
+            android:id="@+id/nav_biology"
+            android:icon="@drawable/ic_menu_biology"
+            android:title="@string/menu_biology" />
     </group>
 </menu>

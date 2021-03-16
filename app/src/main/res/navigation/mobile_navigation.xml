@@ -14,16 +14,25 @@
         android:id="@+id/nav_english"
         android:name="com.example.gcserevisionapp.ui.english.EnglishFragment"
         android:label="@string/menu_english"
-        tools:layout="@layout/fragment_english" >
+        tools:layout="@layout/fragment_english">
         <action
             android:id="@+id/action_nav_english_to_nav_topics"
             app:destination="@id/nav_topics" />
     </fragment>
     <fragment
+        android:id="@+id/nav_biology"
+        android:name="com.example.gcserevisionapp.ui.biology.BiologyFragment"
+        android:label="@string/menu_biology"
+        tools:layout="@layout/fragment_biology">
+        <action
+            android:id="@+id/action_nav_biology_to_nav_topics"
+            app:destination="@id/nav_topics" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_topics"
         android:name="com.example.gcserevisionapp.TopicsFragment"
-        android:label="@string/menu_english"
-        tools:layout="@layout/fragment_topics" >
+        tools:layout="@layout/fragment_topics">
         <action
             android:id="@+id/action_nav_topics_to_nav_subtopics"
             app:destination="@id/nav_subtopics" />
@@ -31,8 +40,7 @@
     <fragment
         android:id="@+id/nav_subtopics"
         android:name="com.example.gcserevisionapp.SubtopicsFragment"
-        android:label="@string/menu_english"
-        tools:layout="@layout/fragment_subtopics" >
+        tools:layout="@layout/fragment_subtopics">
         <action
             android:id="@+id/action_nav_subtopics_to_nav_english_characters_romeo"
             app:destination="@id/nav_english_characters_romeo" />
@@ -52,7 +60,7 @@
             android:id="@+id/action_nav_subtopics_to_nav_english_paper1_3"
             app:destination="@id/nav_english_paper1_3" />
     </fragment>
-
+    <!-- ENGLISH -->
     <fragment
         android:id="@+id/nav_english_characters_romeo"
         android:name="com.example.gcserevisionapp.ui.english.EnglishRandjCharactersRomeoFragment"
@@ -67,25 +75,27 @@
         android:id="@+id/nav_english_paper1_1ae"
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_1aeFragment"
         android:label="@string/questions_1ae"
-        tools:layout="@layout/fragment_english_lang_paper1_1ae"/>
+        tools:layout="@layout/fragment_english_lang_paper1_1ae" />
     <fragment
         android:id="@+id/nav_english_paper1_1f"
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_1fFragment"
         android:label="@string/questions_1f"
-        tools:layout="@layout/fragment_english_lang_paper1_1f"/>
+        tools:layout="@layout/fragment_english_lang_paper1_1f" />
     <fragment
         android:id="@+id/nav_english_paper1_2ac"
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_2acFragment"
         android:label="@string/questions_2ac"
-        tools:layout="@layout/fragment_english_lang_paper1_2ac"/>
+        tools:layout="@layout/fragment_english_lang_paper1_2ac" />
     <fragment
         android:id="@+id/nav_english_paper1_2d"
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_2dFragment"
         android:label="@string/questions_2d"
-        tools:layout="@layout/fragment_english_lang_paper1_2d"/>
+        tools:layout="@layout/fragment_english_lang_paper1_2d" />
     <fragment
         android:id="@+id/nav_english_paper1_3"
         android:name="com.example.gcserevisionapp.ui.english.EnglishLangPaper1_3Fragment"
         android:label="@string/question_3"
-        tools:layout="@layout/fragment_english_lang_paper1_3"/>
+        tools:layout="@layout/fragment_english_lang_paper1_3" />
+    <!-- BIOLOGY -->
+
 </navigation>
