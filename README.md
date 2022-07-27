@@ -13,5 +13,9 @@ Can click on 'continue revision' to continue from where you left off.
 
 ![image](https://user-images.githubusercontent.com/46638829/181258834-1d18ce41-9002-4325-ac00-c4e6de28567c.png)
 
+Also supports dark mode.
+
+![image](https://user-images.githubusercontent.com/46638829/181260421-4ccbf35c-4fea-4d3f-b1fa-925eb84bc774.png)
+
 ## Disclaimer
 The icon is not my intellectual property
